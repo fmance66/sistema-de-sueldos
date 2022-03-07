@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Editar Variable - Sistema de Sueldos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../jquery-ui-datepicker/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="../jquery-toastr/toastr.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-xl">
+      <!-- <div class="container h-100"> -->
+      <div class="container-fluid h-100">
+
+          <!-- titulo sistema -->
+          <a class="navbar-brand" href="../index.html">
+              <h1 class="tm-site-title mb-0 ml-3">Sistema de Sueldos</h1>
+          </a>
+          <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars tm-nav-icon"></i>
+          </button>
+
+          <!-- menu horizontal -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto h-100">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/liquidaciones.html">
+                          <i class="fas fa-file-alt"></i>
+                          Liquidaciones
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/recibos.html">
+                          <i class="fas fa-money-check-alt"></i>
+                          Recibos
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/empleados.html">
+                          <i class="fas fa-users"></i>
+                          Empleados
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/variables.html">
+                          <i class="fas fa-subscript"></i>
+                          Variables
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/usuarios.html">
+                      <i class="fas fa-user"></i>                                
+                          Usuarios
+                      </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-print"></i>
+                          <span>
+                              Listados 
+                              <i class="fas fa-angle-down"></i>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Recibos de Sueldos</a>
+                          <a class="dropdown-item" href="#">Listado de Empleados</a>
+                          <a class="dropdown-item" href="#">Listado de Variables</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-cog"></i>
+                          <span>
+                              Configuración <i class="fas fa-angle-down"></i>
+                          </span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Perfil</a>
+                          <a class="dropdown-item" href="#">Facturación</a>
+                          <a class="dropdown-item" href="#">Personalizar</a>
+                      </div>
+                  </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link d-block" href="../pages/login.html">
+                      <i class="fa fa-power-off"></i>  
+                      Salir
+                  </a>
+                </li>
+              </ul>
+          </div>
+      </div>
+
+    </nav>
+
+    <div class="container tm-mt-big tm-mb-big">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+          <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="tm-block-title d-inline-block">Editar Variable</h2>
+              </div>
+            </div>
+            <div class="tm-edit-variable-row row">
+              <!-- <div class="col-xl-6 col-lg-6 col-md-12"> -->
+              <div class="col-12">
+                <!-- <form action="" method="post" class="tm-edit-variable-form"> -->
+                <form class="tm-edit-variable-form">
+
+                  <div class="form-group mb-3">
+                    <input id="id" name="id" type="text" 
+                           class="form-control validate oculto"/>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <label for="nombre">
+                      Nombre Variable
+                    </label>
+                    <input id="nombre" name="nombre" type="text" class="form-control validate"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="valor">
+                      Valor Variable
+                    </label>
+                    <textarea id="valor" class="form-control validate" rows="5" required></textarea>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="tipoVariable">
+                      Tipo Variable
+                    </label>
+                    <select id="selTipoVariable" class="custom-select tm-select-accounts">
+                      <option>Seleccione Tipo de Variable</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input id="estado" name="estado" type="text" 
+                           class="form-control validate oculto"/>
+                  </div>
+                </form>
+              </div>
+              <div id="editar-liquidacion" class="col-12 mt-4">
+                  <button id="btnActualizar" type="submit" class="btn btn-primary btn-block text-uppercase">Actualizar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="tm-footer row tm-mt-small">
+      <div class="col-12 font-weight-light">
+          <p class="text-center text-white mb-0 px-4 small">
+              &copy; <b>2022</b> Main IT. Todos los derechos reservados. 
+              &nbsp;Diseño: <a rel="nofollow noopener" href="https://www.linkedin.com/in/fernando-mancevich/" class="tm-footer-link">Fernando Mancevich</a>
+          </p>
+      </div>
+    </footer>
+
+    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../jquery-ui-datepicker/jquery-ui.min.js"></script>
+    <script src="../jquery-toastr/toastr.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+
+    <script type="module" src="../js/edit-variable.js"></script>
+
+  </body>
+</html>

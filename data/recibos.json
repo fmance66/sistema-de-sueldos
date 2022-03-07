@@ -1,0 +1,230 @@
+﻿[
+    {
+        "id": 1,
+        "legajo": "122339",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 145612.45,
+        "totalDeducciones": 30578.61,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 115033.84,
+        "conceptos": [
+            { "id": 1, "resultado": 145612.45 },
+            { "id": 2, "resultado": 16017.37 },
+            { "id": 3, "resultado": 4368.37 },
+            { "id": 4, "resultado": 3713.12 },
+            { "id": 5, "resultado": 655.26 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 2,
+        "legajo": "122340",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 236456.25,
+        "totalDeducciones": 49655.81,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 236456.25 },
+            { "id": 2, "resultado": 26010.19 },
+            { "id": 3, "resultado": 7093.69	},
+            { "id": 4, "resultado": 6029.63 },
+            { "id": 5, "resultado": 1064.05 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 3,
+        "legajo": "122341",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 333281.48,
+        "totalDeducciones": 69989.11,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 333281.48 },
+            { "id": 2, "resultado": 36660.96 },
+            { "id": 3, "resultado": 9998.44 },
+            { "id": 4, "resultado": 8498.68 },
+            { "id": 5, "resultado": 1499.77 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 4,
+        "legajo": "122342",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 188233.70,
+        "totalDeducciones": 37646.74,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 188233.70 },
+            { "id": 2, "resultado": 20705.71 },
+            { "id": 3, "resultado": 5647.01	},
+            { "id": 4, "resultado": 4799.96	},
+            { "id": 5, "resultado": 847.05 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 5,
+        "legajo": "122343",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 459678.41,
+        "totalDeducciones": 87338.90,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 459678.41 },
+            { "id": 2, "resultado": 50564.63 },
+            { "id": 3, "resultado": 13790.35 },
+            { "id": 4, "resultado": 11721.80 },
+            { "id": 5, "resultado": 2068.55 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 6,
+        "legajo": "122344",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 78956.78,
+        "totalDeducciones": 15791.36,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 78956.78  },
+            { "id": 2, "resultado": 8685.25 },
+            { "id": 3, "resultado": 2368.70 },
+            { "id": 4, "resultado": 2013.40 },
+            { "id": 5, "resultado": 355.31 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 7,
+        "legajo": "122345",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 116345.80,
+        "totalDeducciones": 22105.70,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 116345.80 },
+            { "id": 2, "resultado": 12798.04 },
+            { "id": 3, "resultado": 3490.37	},
+            { "id": 4, "resultado": 2966.82	},
+            { "id": 5, "resultado": 523.56 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 8,
+        "legajo": "122346",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 289434.90,
+        "totalDeducciones": 57886.98,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 289434.90 },
+            { "id": 2, "resultado": 31837.84 },
+            { "id": 3, "resultado": 8683.05	 },
+            { "id": 4, "resultado": 7380.59	},
+            { "id": 5, "resultado": 1302.46 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 9,
+        "legajo": "122347",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 356970.65,
+        "totalDeducciones": 74963.84,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 356970.65 },
+            { "id": 2, "resultado": 39266.77 },
+            { "id": 3, "resultado": 10709.12 },
+            { "id": 4, "resultado": 9102.75	},
+            { "id": 5, "resultado": 1606.37 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 10,
+        "legajo": "122348",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 176956.33,
+        "totalDeducciones": 33621.70,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 176956.33 },
+            { "id": 2, "resultado": 19465.20 },
+            { "id": 3, "resultado": 5308.69 },
+            { "id": 4, "resultado": 4512.39 },
+            { "id": 5, "resultado": 796.30 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 11,
+        "legajo": "122349",
+        "idLiquidacion": 3,
+        "estado": "anulado",
+        "totalRemunerativo": 188233.70,
+        "totalDeducciones": 37646.74,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 188233.70 },
+            { "id": 2, "resultado": 20705.71 },
+            { "id": 3, "resultado": 5647.01	},
+            { "id": 4, "resultado": 4799.96	},
+            { "id": 5, "resultado": 847.05 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    },
+    {
+        "id": 12,
+        "legajo": "122350",
+        "idLiquidacion": 3,
+        "estado": "activo",
+        "totalRemunerativo": 88456.20,
+        "totalDeducciones": 16806.68,
+        "totalNoRemunerativo": 0.00,
+        "totalNeto": 0.00,
+        "conceptos": [
+            { "id": 1, "resultado": 88456.20 },
+            { "id": 2, "resultado": 9730.18	},
+            { "id": 3, "resultado": 2653.69	},
+            { "id": 4, "resultado": 2255.63	},
+            { "id": 5, "resultado": 398.05 },
+            { "id": 6, "resultado": 0.00 },
+            { "id": 7, "resultado": 0.00 }
+        ]
+    }
+]

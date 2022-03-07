@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "descripcion": "Haber remunerativo",
+        "operacion": "+",
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "descripcion": "Deducciones",
+        "operacion": "-",
+        "estado": "activo"
+    },
+    {
+        "id": 3,
+        "descripcion": "Haber no remunerativo",
+        "operacion": "+",
+        "estado": "activo"
+    },
+    {
+        "id": 4,
+        "descripcion": "Exepcional",
+        "operacion": "+",
+        "estado": "activo"
+    }
+]
+

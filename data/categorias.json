@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "descripcion": "Administrativo",
+        "sueldoBruto": "116345.80",
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "descripcion": "Jefe de Departamento",
+        "sueldoBruto": "756970.65",
+        "estado": "activo"
+    },
+    {
+        "id": 3,
+        "descripcion": "Jefe de División",
+        "sueldoBruto": "588233.70",
+        "estado": "activo"
+    },
+    {
+        "id": 4,
+        "descripcion": "Líder de Proyecto",
+        "sueldoBruto": "459678.40",
+        "estado": "activo"
+    },
+    {
+        "id": 5,
+        "descripcion": "Director",
+        "sueldoBruto": "1396956.50",
+        "estado": "activo"
+    }
+]
+

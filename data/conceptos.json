@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "descripcion": "Sueldo",
+        "formula": ":SUELDO",
+        "mostrado": "",
+        "tipoConcepto": 1,
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "descripcion": "Jubilación",
+        "formula": ":JUBILACION",
+        "mostrado": "",
+        "tipoConcepto": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 3,
+        "descripcion": "Ley 19.032",
+        "formula": ":LEY_19032",
+        "mostrado": "",
+        "tipoConcepto": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 4,
+        "descripcion": "Obra Social",
+        "formula": ":OBRA_SOCIAL",
+        "mostrado": "",
+        "tipoConcepto": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 5,
+        "descripcion": "A.N.S.S.A.L",
+        "formula": ":ANSSAL",
+        "mostrado": "",
+        "tipoConcepto": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 6,
+        "descripcion": "Impuesto a las Ganancias",
+        "formula": ":GANANCIAS",
+        "mostrado": "Impuesto Ganancias",
+        "tipoConcepto": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 7,
+        "descripcion": "Dif. Obra Social",
+        "formula": ":DIF_OBRA_SOCIAL",
+        "mostrado": "Dif. :NOMBRE_OBRA_SOCIAL",
+        "tipoConcepto": 2,
+        "estado": "activo"
+    }
+]
+
+

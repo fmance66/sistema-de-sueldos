@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "descripcion": "Mensual Normal",
+        "conceptos": [1, 2, 3, 4, 5],
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "descripcion": "SAC",
+        "conceptos": [1, 2, 3, 4, 5],
+        "estado": "activo"
+    }
+]

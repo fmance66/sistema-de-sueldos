@@ -1,0 +1,24 @@
+﻿[
+    {
+        "id": "admin",
+        "nombre": "Administrador",
+        "cuil": "20163458902",
+        "estado": "activo",
+        "password": "admin",
+        "fechaUltLogon": "31/12/2000",
+        "idPerfil": 1,
+        "telefono": "11-6578-9199",
+        "eMail": "admin@outlook.com.ar"
+    },
+    {
+        "id": "fmancevich",
+        "nombre": "Fernando Mancevich",
+        "cuil": "20182865762",
+        "estado": "activo",
+        "password": "1234",
+        "fechaUltLogon": "31/12/2000",
+        "idPerfil": 1,
+        "telefono": "11-6188-9109",
+        "eMail": "fmancevich@outlook.com.ar"
+    }
+]

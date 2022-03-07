@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id": 1,
+        "periodo": "11/2021",
+        "descripcion": "Noviembre de 2021",
+        "idTipoLiquidacion": 1,
+        "estado": "cerrada",
+        "fechaPago": "04/12/2021"
+    },
+    {
+        "id": 2,
+        "periodo": "12/2021",
+        "descripcion": "Diciembre de 2021",
+        "idTipoLiquidacion": 1,
+        "estado": "cerrada",
+        "fechaPago": "06/01/2022"
+    },
+    {
+        "id": 3,
+        "periodo": "01/2022",
+        "descripcion": "Enero de 2022",
+        "idTipoLiquidacion": 1,
+        "estado": "abierta",
+        "fechaPago": "05/02/2022"
+    }
+]

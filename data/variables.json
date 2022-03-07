@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "nombre": "SUELDO",
+        "valor": ":#SUELDO_BRUTO",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 2,
+        "nombre": "JUBILACION",
+        "valor": ":SUELDO * 0.11",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 3,
+        "nombre": "LEY_19032",
+        "valor": ":SUELDO * 0.03",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 4,
+        "nombre": "OBRA_SOCIAL",
+        "valor": ":SUELDO * 0.0255",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 5,
+        "nombre": "ANSSAL",
+        "valor": ":SUELDO * 0.0045",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 6,
+        "nombre": "DIF_OBRA_SOCIAL",
+        "valor": "?",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 7,
+        "nombre": "IMPUESTO_GANANCIAS",
+        "valor": "?",
+        "idTipoVariable": 2,
+        "estado": "activo"
+    },
+    {
+        "id": 8,
+        "nombre": "#SUELDO_BRUTO",
+        "valor": "#",
+        "idTipoVariable": 6,
+        "estado": "activo"
+    },
+    {
+        "id": 9,
+        "nombre": "#NOMBRE_OBRA_SOCIAL",
+        "valor": "#",
+        "idTipoVariable": 6,
+        "estado": "activo"
+    },
+    {
+        "id": 10,
+        "nombre": "#FECHA_INGRESO",
+        "valor": "#",
+        "idTipoVariable": 6,
+        "estado": "activo"
+    }
+]
+

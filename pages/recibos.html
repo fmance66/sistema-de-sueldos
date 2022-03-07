@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recibos - Sistema de Sueldos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../jquery-toastr/toastr.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css">
+
+  </head>
+
+  <body id="reciboPage">
+    <div class="" id="recibo">
+
+      <nav class="navbar navbar-expand-xl">
+            <!-- <div class="container h-100"> -->
+            <div class="container-fluid h-100">
+
+                <!-- titulo sistema -->
+                <a class="navbar-brand" href="../index.html">
+                    <h1 class="tm-site-title mb-0 ml-3">Sistema de Sueldos</h1>
+                </a>
+                <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars tm-nav-icon"></i>
+                </button>
+
+                <!-- menu horizontal -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto h-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/liquidaciones.html">
+                                <i class="fas fa-file-alt"></i>
+                                Liquidaciones
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/recibos.html">
+                                <i class="fas fa-money-check-alt"></i>
+                                Recibos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/empleados.html">
+                                <i class="fas fa-users"></i>
+                                Empleados
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/variables.html">
+                                <i class="fas fa-subscript"></i>
+                                Variables
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/usuarios.html">
+                            <i class="fas fa-user"></i>                                
+                                Usuarios
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-print"></i>
+                                <span>
+                                    Listados 
+                                    <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Recibos de Sueldos</a>
+                                <a class="dropdown-item" href="#">Listado de Empleados</a>
+                                <a class="dropdown-item" href="#">Listado de Variables</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                                <span>
+                                    Configuración <i class="fas fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Facturación</a>
+                                <a class="dropdown-item" href="#">Personalizar</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-block" href="../pages/login.html">
+                                <i class="fa fa-power-off"></i>  
+                                Salir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+      </nav>
+
+      <!-- <div class="container-fluid p-5"> -->
+      <div class="container-fluid">
+
+        <!-- select de lquidación -->
+        <div class="row tm-content-row">
+            <div class="col-lg-12 col-xs-12 col-sm-6 tm-block-col">
+              <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+                <h2 class="tm-block-title">Liquidaciones de Sueldos</h2>
+                <p class="text-white">Liquidaciones</p>
+                <select id="selLiquidacion" class="custom-select">
+                    <option>Seleccione Liquidación</option>
+                    <!-- se llena en liquidacion.js -->
+                </select>
+              </div>
+            </div>
+        </div>
+
+        <!-- tabla de recibos filtrada por liquidación -->
+        <div class="row tm-content-row">
+            <div class="col-12 tm-block-col">
+              <div class="tm-bg-primary-dark tm-block tm-block-recibos">
+                <h2 class="tm-block-title">Recibos de Sueldo</h2>
+                <div class="tm-recibo-table-container">
+                    <table id="tablaRecibos" class="table table-hover">
+                        <thead id="tablaRecibosHead">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="oculto">ID</th>
+                                <th>LEGAJO</th>
+                                <th>NOMBRE</th>
+                                <th class="oculto">ID LIQUIDACION</th>
+                                <th>PERIODO</th>
+                                <th>ESTADO</th>
+                                <th>TOTAL REMUNERATIVO</th>
+                                <th>TOTAL DEDUCCIONES</th>
+                                <th>TOTAL NO REMUNERATIVO</th>
+                                <th>TOTAL NETO</th>
+                                <th>&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <!-- <tbody id="tablaRecibosBody">
+                            se genera dinamicamente en recibos.js
+                        </tbody> -->
+                    </table>
+                </div>
+                <!-- table container -->
+                <a href="add-recibo.html" class="btn btn-primary btn-block text-uppercase mb-3 mt-4">
+                    Agregar Recibo
+                </a>
+                <button class="btn btn-primary btn-block text-uppercase">
+                    Borrar recibos seleccionadas
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <footer class="tm-footer row tm-mt-small">
+        <div class="col-12 font-weight-light">
+            <p class="text-center text-white mb-0 px-4 small">
+                &copy; <b>2022</b> Main IT. Todos los derechos reservados. 
+                &nbsp;Diseño: <a rel="nofollow noopener" href="https://www.linkedin.com/in/fernando-mancevich/" class="tm-footer-link">Fernando Mancevich</a>
+            </p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../jquery-toastr/toastr.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+
+    <script type="module" src="../js/recibos.js"></script>
+
+  </body>
+</html>
