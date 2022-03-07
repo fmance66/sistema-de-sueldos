@@ -57,7 +57,7 @@ const iniciar = () => {
         // window.location.href = "../pages/login.html";
     }
 
-    console.log(userLogon.nombre);
+    // console.log(userLogon.nombre);
 
     // personaliza mensaje de bienvenida al usuario logoneado
     let mensajeBienvenida = document.querySelector("#msgBienvenida");
