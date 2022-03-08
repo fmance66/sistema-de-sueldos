@@ -128,7 +128,7 @@ $(document).ready(function() {
     if (variable.estado == "activo") {
       // console.log(`objVariable: ${JSON.stringify(variable)}`);
       sessionStorage.setItem("objVariable", JSON.stringify(variable));
-      window.location.href = getBaseUrl() + '/edit-variable.html';
+      window.location.href = getBaseUrl() + '/pages/edit-variable.html';
     }
   });
     
@@ -240,7 +240,7 @@ $(".tm-fila-tipo-variable").on("click", function() {
   if (tipoVariable.estado == "Activo") {
   //   console.log(`objVariable: ${JSON.stringify(variable)}`);
     sessionStorage.setItem("objTipoVariable", JSON.stringify(tipoVariable));
-    window.location.href = getBaseUrl() + '/edit-variable.html';
+    window.location.href = getBaseUrl() + '/pages/edit-variable.html';
   }
 });
 

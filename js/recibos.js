@@ -190,7 +190,7 @@ $(document).ready(function() {
     // if (recibo.estado == "activo") {
         // console.log(`objRecibo: ${JSON.stringify(recibo)}`);
         sessionStorage.setItem("objRecibo", JSON.stringify(recibo));
-        window.location.href = getBaseUrl() + '/edit-recibo.html';
+        window.location.href = getBaseUrl() + '/pages/edit-recibo.html';
       }
   });
 
