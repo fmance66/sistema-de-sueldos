@@ -58,7 +58,7 @@ const iniciar = () => {
 
     let userLogon = usuarios.getUserLogon();
     if (userLogon == null || userLogon === undefined) {
-        window.location.href = getBaseUrl + '/pages/login.html';
+        window.location.href = getBaseUrl() + '/pages/login.html';
     }
 
     // personaliza mensaje de bienvenida al usuario logoneado
