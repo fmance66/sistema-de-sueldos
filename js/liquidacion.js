@@ -3,7 +3,7 @@
 */
 
 // librerias
-import { generateDivEstado } from './utiles.js';
+import { getBaseUrl, generateDivEstado } from './utiles.js';
 
 // models
 import { Liquidacion } from './models/liquidacion.js';

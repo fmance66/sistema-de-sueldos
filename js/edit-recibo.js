@@ -21,7 +21,7 @@ const armarTablaHTML = (idTabla, listaConceptosRecibo) => {
 
   for (const conceptoRecibo of listaConceptosRecibo) {
 
-    console.log('conceptoRecibo: ', conceptoRecibo);
+    // console.log('conceptoRecibo: ', conceptoRecibo);
 
     let tr = document.createElement("tr");
 
@@ -34,12 +34,12 @@ const armarTablaHTML = (idTabla, listaConceptosRecibo) => {
     // busca el concepto segun el id del concepto
     const conceptoController = new ConceptoController();
     let concepto = conceptoController.get(conceptoRecibo.id);
-    console.log('concepto: ', concepto);
+    // console.log('concepto: ', concepto);
 
     // busca el tipoConcepto segun el concepto
     const tipoConceptos = new TipoConceptoController();
     let tipoConcepto = tipoConceptos.get(concepto.tipoConcepto);
-    console.log('tipoConcepto: ', tipoConcepto);
+    // console.log('tipoConcepto: ', tipoConcepto);
 
     for (let e in conceptoRecibo) {
 
@@ -74,7 +74,7 @@ const armarTablaHTML = (idTabla, listaConceptosRecibo) => {
               let haber = 0.00;
               let deduccion = 0.00;
 
-              console.log('tipoConcepto.operacion: ', tipoConcepto.operacion);
+              // console.log('tipoConcepto.operacion: ', tipoConcepto.operacion);
 
               switch (tipoConcepto.operacion) {
                 case '+':
@@ -85,7 +85,7 @@ const armarTablaHTML = (idTabla, listaConceptosRecibo) => {
                   break;
               }
               
-              console.log(haber, deduccion);
+              // console.log(haber, deduccion);
 
               td = document.createElement("td");
               td.classList.add("tm-col-concepto", "tm-col-haber");

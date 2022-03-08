@@ -3,7 +3,7 @@
 */
  
 // librerias
-import { generateDivEstado } from './utiles.js';
+import { getBaseUrl, generateDivEstado } from './utiles.js';
 
 // models
 import { Variable } from './models/variable.js';
@@ -112,7 +112,7 @@ $(document).ready(function() {
   $(document).on("click", ".tm-fila-variable", function() { 
     let tabla = document.getElementById("tablaVariables");  
     let fila = $(this).closest('tr')[0];   // guarda la fila seleccionada
-    console.log(fila);
+    // console.log(fila);
 
     let tds = fila.querySelectorAll("td");
 
