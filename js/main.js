@@ -38,10 +38,15 @@ import { armarTablaHTML } from './liquidacion.js';
 
 const iniciar = () => {
 
-
+    let hostname = window.location.hostname;
     let origin = window.location.origin;
     let pathname = window.location.pathname;
     let baseurl = origin + pathname;
+
+    if ((hostname == "fmancevich.github.io") && (pathname.indexOf('sistema-de-sueldos') == -1)) {
+            pathname = '/sistema-de-sueldos' + baseurl;
+    }
+
     console.log('--- main.js iniciar() ---', origin);
     console.log('origin --> ', origin);
     console.log('pathname --> ', pathname);
