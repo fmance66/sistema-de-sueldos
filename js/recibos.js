@@ -2,7 +2,7 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
-import * as utiles from './utiles.js';
+import { getBaseUrl, generateDivEstado } from './utiles.js';
 import { Recibo } from './models/recibo.js';
 import { EmpleadoController } from './controllers/empleadoController.js';
 import { LiquidacionController } from './controllers/liquidacionController.js';
@@ -112,7 +112,7 @@ const armarTablaHTML = (idTabla, recibos) => {
           // semaforo de estado y periodo de liquidacion
           if (e == 'estado') {
             td.classList.add("tm-col-estado");
-            td.innerHTML = utiles.generateDivEstado(recibo[e]);
+            td.innerHTML = generateDivEstado(recibo[e]);
           }
 
           if (recibo.estado == "activo") {

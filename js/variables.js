@@ -2,8 +2,13 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
  
-import * as utiles from './utiles.js';
+// librerias
+import { generateDivEstado } from './utiles.js';
+
+// models
 import { Variable } from './models/variable.js';
+
+// controladores
 import { VariableController } from './controllers/variableController.js';
 import { TipoVariableController } from './controllers/tipoVariableController.js';
 import { UsuarioController } from './controllers/usuarioController.js';
@@ -14,13 +19,13 @@ const armarTablaHTML = (idTabla, variables) => {
 
   let tablaVariables = document.querySelector(idTabla);
 
-  console.log('idTabla: ', idTabla);
-  console.log('tablaVariables: ', tablaVariables);
+  // console.log('idTabla: ', idTabla);
+  // console.log('tablaVariables: ', tablaVariables);
     
   let tbody = document.createElement("tbody");
   tablaVariables.appendChild(tbody);
   
-  console.log('variables: ', JSON.stringify(variables));
+  // console.log('variables: ', JSON.stringify(variables));
 
   for (const variable of variables.variables) {
     let tr = document.createElement("tr");
@@ -71,7 +76,7 @@ const armarTablaHTML = (idTabla, variables) => {
               
             // semaforo de estado
             if (e == 'estado') {
-                td.innerHTML = utiles.generateDivEstado(variable[e]);
+                td.innerHTML = generateDivEstado(variable[e]);
             }
 
             // agrega clase al campo y convierte cursor para usar con el "click"
@@ -164,8 +169,8 @@ const armarTablaHtmlTipo = (idTabla, tipoVariables) => {
   // carga table de variables desde array de variables
   let tablaTipoVariables = document.querySelector(idTabla);
 
-  console.log('idTabla: ', idTabla);
-  console.log('tablaTipoVariables: ', tablaTipoVariables);
+  // console.log('idTabla: ', idTabla);
+  // console.log('tablaTipoVariables: ', tablaTipoVariables);
 
   let tbody = document.createElement("tbody");
   tablaTipoVariables.appendChild(tbody);
@@ -194,7 +199,7 @@ const armarTablaHtmlTipo = (idTabla, tipoVariables) => {
                 
               // semaforo de estado
               if (e == 'estado') {
-                  td.innerHTML = utiles.generateDivEstado(tipoVariable[e]);
+                  td.innerHTML = generateDivEstado(tipoVariable[e]);
               }
 
               // agrega la columna a la fila con una clase con el nombre del atributo de clase

@@ -2,8 +2,13 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
-import * as utiles from './utiles.js';
+// librerias
+import { generateDivEstado } from './utiles.js';
+
+// models
 import { Liquidacion } from './models/liquidacion.js';
+
+// controladores
 import { TipoLiquidacionController } from './controllers/tipoLiquidacionController.js';
 import { LiquidacionController } from './controllers/liquidacionController.js';
 
@@ -73,7 +78,7 @@ const armarTablaHTML = (idTabla, liquidaciones, isReadOnly) => {
               
             // semaforo de estado
             if (e == 'estado') {       
-              td.innerHTML = utiles.generateDivEstado(liquidacion[e]);
+              td.innerHTML = generateDivEstado(liquidacion[e]);
             }
 
             // si no es read-only agrega clase al campo para uso futuro y convierte cursor tipo manito

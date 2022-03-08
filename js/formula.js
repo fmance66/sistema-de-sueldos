@@ -238,7 +238,7 @@ const calculoFormula = (formula) => {
 
     let resultado = '';
 
-    console.log(`formula: ${formula}`);
+    // console.log(`formula: ${formula}`);
 
     formula = formula.trim();
 
@@ -296,7 +296,7 @@ const calculoFormula = (formula) => {
         } 
     }                                              
 
-    console.log(`resultado: ${resultado}`);
+    console.log(`formula: ${formula}, resultado: ${resultado}`);
 
     return resultado;
 }
