@@ -21,6 +21,10 @@
 
 */
 
+// librerias
+import { projectName } from './utiles.js';
+import { armarTablaHTML } from './liquidacion.js';
+
 // controladores
 import { TipoVariableController } from './controllers/tipoVariableController.js';
 import { VariableController } from './controllers/variableController.js';
@@ -34,23 +38,16 @@ import { LiquidacionController } from './controllers/liquidacionController.js';
 import { ReciboController } from './controllers/reciboController.js';
 
 
-import { armarTablaHTML } from './liquidacion.js';
-
 const iniciar = () => {
 
     let hostname = window.location.hostname;
-    let origin = window.location.origin;
-    let pathname = window.location.pathname;
-    let baseurl = origin + pathname;
+    let project = '';
 
-    if ((hostname == "fmancevich.github.io") && (pathname.indexOf('sistema-de-sueldos') == -1)) {
-            pathname = '/sistema-de-sueldos' + baseurl;
-    }
+    if ((hostname == "fmancevich.github.io")) {
+            project = '/' + projectName;
+    };
 
-    console.log('--- main.js iniciar() ---', origin);
-    console.log('origin --> ', origin);
-    console.log('pathname --> ', pathname);
-    console.log('baseurl --> ', baseurl);
+    console.log('--- main.js iniciar() ---');
     console.log(window.location);
 
     // carga todos los json en localStorage si no existen
@@ -67,11 +64,9 @@ const iniciar = () => {
 
     let userLogon = usuarios.getUserLogon();
     if (userLogon == null || userLogon === undefined) {
-        console.log('redirecciona a ...', origin + "/pages/login.html");
-        window.location.href = origin + '/pages/login.html';
+        let url = origin + project + '/pages/login.html';
+        window.location.href = url;
     }
-
-    // console.log(userLogon.nombre);
 
     // personaliza mensaje de bienvenida al usuario logoneado
     let mensajeBienvenida = document.querySelector("#msgBienvenida");

@@ -2,6 +2,10 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
+// librerias
+import { projectName } from './utiles.js';
+
+// controladores
 import { UsuarioController } from "./controllers/usuarioController.js";
 
 const loginForm = document.querySelector("#loginForm");
@@ -54,13 +58,14 @@ const iniciar = () => {
     $(".navbar-nav").hide();
     $(".navbar-brand").addClass('disabled');
 
-    let origin = window.location.origin;
-    let pathname = window.location.pathname;
-    let baseurl = origin + pathname;
-    console.log('--- login.js iniciar() ---', origin);
-    console.log('origin --> ', origin);
-    console.log('pathname --> ', pathname);
-    console.log('baseurl --> ', baseurl);
+    let hostname = window.location.hostname;
+    let project = '';
+
+    if ((hostname == "fmancevich.github.io")) {
+            project = '/' + projectName;
+    };
+
+    console.log('--- login.js iniciar() ---');
     console.log(window.location);
 };
 

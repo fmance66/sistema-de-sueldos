@@ -2,7 +2,7 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
-// import * as formula from './formula.js';
+const projectName = 'sistema-de-sueldos';
 
 // segun el estado devuelve la class con el color del semaforo verde, amarillo o rojo
 const generateDivEstado = (estado) => { 
@@ -31,4 +31,4 @@ const generateDivEstado = (estado) => {
     return `<div class="tm-estado-semaforo ${clase}"></div>${texto}`;  
 };
 
-export { generateDivEstado };
+export { projectName, generateDivEstado };
