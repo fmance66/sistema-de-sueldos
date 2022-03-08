@@ -4,7 +4,7 @@
 
 // librerias
 import * as formula from '../formula.js';
-import { getBaseUrl } from './utiles.js';
+import { getBaseUrl } from '../utiles.js';
 
 import { Liquidacion } from '../models/liquidacion.js';
 import { Recibo } from '../models/recibo.js';
