@@ -32,7 +32,10 @@ loginButton.addEventListener("click", (e) => {
         // toastr.success(`Bienvenido ${usuario.nombre} al Sistema de Sueldos`,'Login al Sistema');
 
         // window.setTimeout(function() {
-            window.location.href = "../index.html";
+            // window.location.href = "../index.html";
+            console.log('redirecciona a ...', origin + "/index.html");
+            window.location.href = origin + '/index.html';
+    
         // }, 5000);
 
         
@@ -50,7 +53,15 @@ const iniciar = () => {
     // console.log('deberia ocultar el menuNavbar');
     $(".navbar-nav").hide();
     $(".navbar-brand").addClass('disabled');
-    console.log('window.location.href --> ', window.location.href);
+
+    let origin = window.location.origin;
+    let pathname = window.location.pathname;
+    let baseurl = origin + pathname;
+    console.log('--- login.js iniciar() ---', origin);
+    console.log('origin --> ', origin);
+    console.log('pathname --> ', pathname);
+    console.log('baseurl --> ', baseurl);
+    console.log(window.location);
 };
 
 window.onload = iniciar();

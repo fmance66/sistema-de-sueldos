@@ -38,7 +38,15 @@ import { armarTablaHTML } from './liquidacion.js';
 
 const iniciar = () => {
 
-    console.log('window.location --> ', window.location);
+
+    let origin = window.location.origin;
+    let pathname = window.location.pathname;
+    let baseurl = origin + pathname;
+    console.log('--- main.js iniciar() ---', origin);
+    console.log('origin --> ', origin);
+    console.log('pathname --> ', pathname);
+    console.log('baseurl --> ', baseurl);
+    console.log(window.location);
 
     // carga todos los json en localStorage si no existen
     const tipoVariables = new TipoVariableController();
@@ -54,8 +62,8 @@ const iniciar = () => {
 
     let userLogon = usuarios.getUserLogon();
     if (userLogon == null || userLogon === undefined) {
-        // console.log('window.location.href = "../pages/login.html"');
-        window.location.href = "../pages/login.html";
+        console.log('redirecciona a ...', origin + "/pages/login.html");
+        window.location.href = origin + '/pages/login.html';
     }
 
     // console.log(userLogon.nombre);
