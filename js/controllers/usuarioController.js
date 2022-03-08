@@ -3,7 +3,7 @@
 */
 
 // librerias
-import { getBaseUrl } from './utiles.js';
+import { getBaseUrl } from '../utiles.js';
 
 // controladores
 import { Usuario } from '../models/usuario.js';
