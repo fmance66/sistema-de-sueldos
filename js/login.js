@@ -3,7 +3,7 @@
 */
 
 // librerias
-import { projectName } from './utiles.js';
+import { getBaseUrl } from './utiles.js';
 
 // controladores
 import { UsuarioController } from "./controllers/usuarioController.js";
@@ -37,8 +37,7 @@ loginButton.addEventListener("click", (e) => {
 
         // window.setTimeout(function() {
             // window.location.href = "../index.html";
-            console.log('redirecciona a ...', origin + "/index.html");
-            window.location.href = origin + '/index.html';
+            window.location.href = getBaseUrl() + '/index.html';
     
         // }, 5000);
 
@@ -58,15 +57,9 @@ const iniciar = () => {
     $(".navbar-nav").hide();
     $(".navbar-brand").addClass('disabled');
 
-    let hostname = window.location.hostname;
-    let project = '';
-
-    if ((hostname == "fmancevich.github.io")) {
-            project = '/' + projectName;
-    };
-
-    console.log('--- login.js iniciar() ---');
-    console.log(window.location);
+    // let baseUrl  = getBaseUrl();
+    // console.log('--- login.js iniciar() ---');
+    // console.log('baseUrl: ', baseUrl);
 };
 
 window.onload = iniciar();

@@ -22,7 +22,7 @@
 */
 
 // librerias
-import { projectName } from './utiles.js';
+import { getBaseUrl } from './utiles.js';
 import { armarTablaHTML } from './liquidacion.js';
 
 // controladores
@@ -40,15 +40,9 @@ import { ReciboController } from './controllers/reciboController.js';
 
 const iniciar = () => {
 
-    let hostname = window.location.hostname;
-    let project = '';
-
-    if ((hostname == "fmancevich.github.io")) {
-            project = '/' + projectName;
-    };
-
-    console.log('--- main.js iniciar() ---');
-    console.log(window.location);
+    // let baseUrl  = getBaseUrl();
+    // console.log('--- main.js iniciar() ---');
+    // console.log('baseUrl: ', baseUrl);
 
     // carga todos los json en localStorage si no existen
     const tipoVariables = new TipoVariableController();
@@ -64,8 +58,7 @@ const iniciar = () => {
 
     let userLogon = usuarios.getUserLogon();
     if (userLogon == null || userLogon === undefined) {
-        let url = origin + project + '/pages/login.html';
-        window.location.href = url;
+        window.location.href = getBaseUrl + '/pages/login.html';
     }
 
     // personaliza mensaje de bienvenida al usuario logoneado
