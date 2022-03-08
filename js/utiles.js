@@ -7,7 +7,7 @@ const gitHostName =  window.location.hostname;          // ej: "fmancevich.githu
 const gitProjectName = 'sistema-de-sueldos';
 
 const getBaseUrl = () => {
-    return origin + (gitHostName == "fmancevich.github.io" ? '/' + gitProjectName : '');
+    return `${origin}${(gitHostName == "fmancevich.github.io" ? `/${gitProjectName}` : ``)}`;
 }
 
 
