@@ -3,14 +3,13 @@
 */
 
 // librerias
-import { getBaseUrl } from '../../js/utiles.js';
+import { getBaseUrl } from '../utiles.js';
 
 // controladores
 import { Usuario } from '../models/usuario.js';
 
 // const urlJson = '../../data/usuarios.json';
 const urlJson = getBaseUrl() + '/data/usuarios.json';
-
 const lsName = "lsUsuarios";
 const ssName = "ssUser";
   

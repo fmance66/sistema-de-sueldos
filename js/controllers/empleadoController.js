@@ -2,12 +2,20 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
+// librerias
+import { getBaseUrl } from '../utiles.js';
+
+// models
 import { Empleado } from '../models/empleado.js';
 // import { Categoria } from '../models/categoria.js';
+
+// controladores
 import { CategoriaController } from './categoriaController.js';
 import { VariableController } from './variableController.js';
 
-const urlJson = '../../data/empleados.json';
+// const urlJson = '../../data/empleados.json';
+const urlJson = getBaseUrl() + '/data/empleados.json';
+
 const lsName = "lsEmpleados";
   
 class EmpleadoController {

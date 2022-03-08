@@ -134,7 +134,7 @@ $(document).ready(function() {
         // console.log(`objLiquidacion: ${JSON.stringify(liquidacion)}`);
         sessionStorage.setItem("objLiquidacion", JSON.stringify(liquidacion));
         // console.log('window.location.href = "edit-liquidacion.html"');
-        window.location.href = "edit-liquidacion.html";
+        window.location.href = getBaseUrl() + '/edit-liquidacion.html';
       }
   });
 

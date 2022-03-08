@@ -56,10 +56,6 @@ const iniciar = () => {
     // console.log('deberia ocultar el menuNavbar');
     $(".navbar-nav").hide();
     $(".navbar-brand").addClass('disabled');
-
-    // let baseUrl  = getBaseUrl();
-    // console.log('--- login.js iniciar() ---');
-    // console.log('baseUrl: ', baseUrl);
 };
 
 window.onload = iniciar();

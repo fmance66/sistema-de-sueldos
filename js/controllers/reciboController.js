@@ -2,10 +2,15 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
+// librerias
+import { getBaseUrl } from '../utiles.js';
+
+// models
 import { Recibo } from '../models/recibo.js';
 
 // const urlJson = '../../data/recibos.json';
-const urlJson = '../../data/recibos.json';
+const urlJson = getBaseUrl() + '/data/recibos.json';
+
 const lsName = "lsRecibos";
 
 class ReciboController {

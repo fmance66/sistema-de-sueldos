@@ -2,9 +2,15 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
  
+// librerias
+import { getBaseUrl } from '../utiles.js';
+
+// models
 import { TipoConcepto } from '../models/tipoConcepto.js';
 
-const urlJson = '../../data/tipoConceptos.json';
+// const urlJson = '../../data/tipoConceptos.json';
+const urlJson = getBaseUrl() + '/data/tipoConceptos.json';
+
 const lsName = "lsTipoConceptos";
   
 

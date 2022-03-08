@@ -1,10 +1,15 @@
 /* 
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
- 
+
+// librerias
+import { getBaseUrl } from '../utiles.js';
+
+// models
 import { TipoVariable } from '../models/tipoVariable.js';
 
-const urlJson = '../../data/tipoVariables.json';
+// const urlJson = '../../data/tipoVariables.json';
+const urlJson = getBaseUrl() + '/data/tipoVariables.json';
 const lsName = "lsTipoVariables";
   
 

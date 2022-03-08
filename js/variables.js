@@ -123,8 +123,7 @@ $(document).ready(function() {
     if (variable.estado == "activo") {
       // console.log(`objVariable: ${JSON.stringify(variable)}`);
       sessionStorage.setItem("objVariable", JSON.stringify(variable));
-      // console.log('window.location.href = "edit-variable.html"');
-      window.location.href = "edit-variable.html";
+      window.location.href = getBaseUrl() + '/edit-variable.html';
     }
   });
     
@@ -236,8 +235,7 @@ $(".tm-fila-tipo-variable").on("click", function() {
   if (tipoVariable.estado == "Activo") {
   //   console.log(`objVariable: ${JSON.stringify(variable)}`);
     sessionStorage.setItem("objTipoVariable", JSON.stringify(tipoVariable));
-  //   console.log('window.location.href = "edit-variable.html"');
-    // window.location.href = "edit-variable.html";
+    window.location.href = getBaseUrl() + '/edit-variable.html';
   }
 });
 
@@ -253,8 +251,7 @@ const iniciar = () => {
 
   let userLogon = usuarios.getUserLogon();
   if (userLogon == null || userLogon === undefined) {
-      // console.log('window.location.href = "../pages/login.html"');
-      window.location.href = "../pages/login.html";
+      window.location.href = getBaseUrl() + '/pages/login.html';
   }
 
   const variables = new VariableController();

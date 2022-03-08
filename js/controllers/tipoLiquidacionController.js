@@ -2,11 +2,15 @@
     Proyecto Final: Interprete de fórmulas tipo Excel
 */
 
+// librerias
+import { getBaseUrl } from '../utiles.js';
+
+// models
 import { TipoLiquidacion } from '../models/tipoLiquidacion.js';
 
-// let arrayTipoLiquidaciones = [];
+// const urlJsonTipoLiquidaciones = '../../data/tipoLiquidaciones.json';
+const urlJson = getBaseUrl() + '/data/tipoLiquidaciones.json';
 const lsTipoLiquidaciones = "lsTipoLiquidaciones";
-const urlJsonTipoLiquidaciones = '../../data/tipoLiquidaciones.json';
 
 
 class TipoLiquidacionController {

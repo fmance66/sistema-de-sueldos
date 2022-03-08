@@ -40,10 +40,6 @@ import { ReciboController } from './controllers/reciboController.js';
 
 const iniciar = () => {
 
-    // let baseUrl  = getBaseUrl();
-    // console.log('--- main.js iniciar() ---');
-    // console.log('baseUrl: ', baseUrl);
-
     // carga todos los json en localStorage si no existen
     const tipoVariables = new TipoVariableController();
     const variables = new VariableController();
