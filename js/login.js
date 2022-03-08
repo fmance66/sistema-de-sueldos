@@ -50,6 +50,7 @@ const iniciar = () => {
     // console.log('deberia ocultar el menuNavbar');
     $(".navbar-nav").hide();
     $(".navbar-brand").addClass('disabled');
+    console.log('window.location.href --> ', window.location.href);
 };
 
 window.onload = iniciar();

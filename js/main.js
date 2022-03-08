@@ -38,6 +38,8 @@ import { armarTablaHTML } from './liquidacion.js';
 
 const iniciar = () => {
 
+    console.log('window.location --> ', window.location);
+
     // carga todos los json en localStorage si no existen
     const tipoVariables = new TipoVariableController();
     const variables = new VariableController();
@@ -53,8 +55,7 @@ const iniciar = () => {
     let userLogon = usuarios.getUserLogon();
     if (userLogon == null || userLogon === undefined) {
         // console.log('window.location.href = "../pages/login.html"');
-        console.log('window.location = ', window.location);
-        // window.location.href = "../pages/login.html";
+        window.location.href = "../pages/login.html";
     }
 
     // console.log(userLogon.nombre);
